@@ -1,7 +1,7 @@
-import 'package:roles/src/model/location.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Role {
-  late Location _location;
+  late GeoPoint _location;
   late String _name;
   late String _profileImage;
   late String _sigla;
@@ -11,11 +11,11 @@ class Role {
   Role(this._location, this._name, this._profileImage, this._sigla, this._site,
       this._wasVisited);
 
-  Location get location {
+  GeoPoint get location {
     return _location;
   }
 
-  set location(Location location) => _location = location;
+  set location(GeoPoint location) => _location = location;
 
   String get name => _name;
 
@@ -38,7 +38,7 @@ class Role {
   set wasVisited(bool wasVisited) => _wasVisited = wasVisited;
 
   Role.fromJson(Map<String, dynamic> json) {
-    _location = Location.fromJson(json['location']);
+    _location = GeoPoint(json['location'].latitude, json['location'].longitude);
     _name = json['name'];
     _profileImage = json['profileImage'];
     _sigla = json['sigla'];
@@ -48,7 +48,10 @@ class Role {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
-    data['location'] = _location.toJson();
+    data['location'] = {
+      "latitude": _location.latitude,
+      "longitude": _location.longitude
+    };
     data['name'] = _name;
     data['profileImage'] = _profileImage;
     data['sigla'] = _sigla;
