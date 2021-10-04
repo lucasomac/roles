@@ -1,44 +1,59 @@
-import 'point.dart';
+import 'package:roles/src/model/location.dart';
 
 class Role {
-  final Point _location;
-  final String _name;
-  String _photoImage;
-  String _sigla;
-  String _site;
-  bool _wasVisited;
-  final String _local;
+  late Location _location;
+  late String _name;
+  late String _profileImage;
+  late String _sigla;
+  late String _site;
+  late bool _wasVisited;
 
-  Role(this._location, this._name, this._photoImage, this._sigla, this._site,
-      this._wasVisited, this._local);
+  Role(this._location, this._name, this._profileImage, this._sigla, this._site,
+      this._wasVisited);
 
-  String get local => _local;
-
-  bool get wasVisited => _wasVisited;
-
-  set wasVisited(bool value) {
-    _wasVisited = value;
+  Location get location {
+    return _location;
   }
 
-  String get site => _site;
-
-  set site(String value) {
-    _site = value;
-  }
-
-  String get sigla => _sigla;
-
-  set sigla(String value) {
-    _sigla = value;
-  }
-
-  String get photoImage => _photoImage;
-
-  set photoImage(String value) {
-    _photoImage = value;
-  }
+  set location(Location location) => _location = location;
 
   String get name => _name;
 
-  Point get location => _location;
+  set name(String name) => _name = name;
+
+  String get profileImage => _profileImage;
+
+  set profileImage(String profileImage) => _profileImage = profileImage;
+
+  String get sigla => _sigla;
+
+  set sigla(String sigla) => _sigla = sigla;
+
+  String get site => _site;
+
+  set site(String site) => _site = site;
+
+  bool get wasVisited => _wasVisited;
+
+  set wasVisited(bool wasVisited) => _wasVisited = wasVisited;
+
+  Role.fromJson(Map<String, dynamic> json) {
+    _location = Location.fromJson(json['location']);
+    _name = json['name'];
+    _profileImage = json['profileImage'];
+    _sigla = json['sigla'];
+    _site = json['site'];
+    _wasVisited = json['wasVisited'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['location'] = _location.toJson();
+    data['name'] = _name;
+    data['profileImage'] = _profileImage;
+    data['sigla'] = _sigla;
+    data['site'] = _site;
+    data['wasVisited'] = _wasVisited;
+    return data;
+  }
 }

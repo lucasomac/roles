@@ -22,7 +22,7 @@ class ItemImage extends StatelessWidget {
         child: ClipRRect(
           borderRadius: BorderRadius.circular(8),
           child: Image.network(
-            _role.photoImage,
+            _role.profileImage,
             semanticLabel: "Lucas",
             fit: BoxFit.fill,
           ),

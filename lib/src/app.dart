@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:roles/src/screens/list_roles.dart';
 
 /// The Widget that configures your application.
@@ -26,8 +24,8 @@ class App extends StatelessWidget {
       // SettingsController to display the correct theme.
       theme: ThemeData(),
       darkTheme: ThemeData.dark(),
-      title: 'Rolês',
-      home: ListRole(),
+      title: 'Roles',
+      home: const ListRoles(),
     );
   }
 }
