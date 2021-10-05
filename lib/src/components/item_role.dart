@@ -12,24 +12,30 @@ class ItemRole extends StatelessWidget {
       appBar: AppBar(
         title: Text(_role.sigla),
       ),
-      body: Container(
-        decoration: BoxDecoration(color: Colors.transparent),
-        child: Column(
-          children: [
-            ClipRRect(
-                borderRadius: const BorderRadius.only(
-                    bottomLeft: Radius.circular(16),
-                    bottomRight: Radius.circular(16)),
-                child: Image.network(
-                  _role.profileImage,
-                  fit: BoxFit.fitWidth,
-                )),
-            Text(
-              _role.name,
-              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+      body: Column(
+        children: [
+          ClipRRect(
+              borderRadius: const BorderRadius.only(
+                  bottomLeft: Radius.circular(16),
+                  bottomRight: Radius.circular(16)),
+              child: Image.network(
+                _role.profileImage,
+                fit: BoxFit.fitHeight,
+              )),
+          Text(
+            _role.name,
+            style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              _role.biography,
+              textAlign: TextAlign.justify,
+              style: const TextStyle(
+                  fontSize: 16, letterSpacing: 2, fontStyle: FontStyle.italic),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
