@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:roles/src/components/actions_card.dart';
+import 'package:roles/src/components/title_card.dart';
 import 'package:roles/src/model/role.dart';
 
 class ItemRole extends StatelessWidget {
@@ -22,10 +24,8 @@ class ItemRole extends StatelessWidget {
                 _role.profileImage,
                 fit: BoxFit.fitHeight,
               )),
-          Text(
-            _role.name,
-            style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
-          ),
+          TitleCard(_role.name),
+          const ActionsCard(),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
