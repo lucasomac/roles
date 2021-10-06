@@ -17,22 +17,24 @@ class ItemRole extends StatelessWidget {
       body: Column(
         children: [
           ClipRRect(
-              borderRadius: const BorderRadius.only(
-                  bottomLeft: Radius.circular(16),
-                  bottomRight: Radius.circular(16)),
-              child: Image.network(
-                _role.profileImage,
-                fit: BoxFit.fitHeight,
-              )),
+            borderRadius: const BorderRadius.only(
+                bottomLeft: Radius.circular(16),
+                bottomRight: Radius.circular(16)),
+            child: Image.network(
+              _role.profileImage,
+              fit: BoxFit.fitHeight,
+            ),
+          ),
           TitleCard(_role.name),
           const ActionsCard(),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(32.0),
             child: Text(
               _role.biography,
               textAlign: TextAlign.justify,
+              softWrap: true,
               style: const TextStyle(
-                  fontSize: 16, letterSpacing: 2, fontStyle: FontStyle.italic),
+                  fontSize: 14, letterSpacing: 2, fontStyle: FontStyle.italic),
             ),
           ),
         ],

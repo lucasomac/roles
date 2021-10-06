@@ -15,6 +15,7 @@ class App extends StatelessWidget {
       // MaterialApp to restore the navigation stack when a user leaves and
       // returns to the app after it has been killed while running in the
       // background.
+      debugShowCheckedModeBanner: false,
       restorationScopeId: 'app',
       supportedLocales: const [
         Locale('en', ''), // English, no country code

@@ -4,6 +4,7 @@ import 'package:roles/src/components/item_role.dart';
 import 'package:roles/src/database/firestore.dart';
 import 'package:roles/src/model/role.dart';
 import 'package:roles/src/components/item_miniature.dart';
+import 'package:roles/src/util/colors_pallet.dart';
 
 class ListRoles extends StatelessWidget {
   const ListRoles({Key? key}) : super(key: key);
@@ -23,7 +24,9 @@ class ListRoles extends StatelessWidget {
 
             if (snapshot.connectionState == ConnectionState.waiting) {
               return const Center(
-                child: LinearProgressIndicator(),
+                child: LinearProgressIndicator(
+                  color: ColorsPallet.primary,
+                ),
               );
             }
             return GridView.count(
