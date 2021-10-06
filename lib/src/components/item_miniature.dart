@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:roles/src/model/role.dart';
+import 'package:roles/src/util/colors_pallet.dart';
 
 class ItemMiniature extends StatelessWidget {
   final Role _role;
@@ -10,9 +11,8 @@ class ItemMiniature extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.red,
         border: Border.all(
-          color: Colors.black,
+          color: ColorsPallet.secondaryLight,
           width: 2,
         ),
         borderRadius: BorderRadius.circular(12),
