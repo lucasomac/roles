@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 class TitleCard extends StatelessWidget {
   final String _namePlace;
+  final String _addressPlace;
 
-  const TitleCard(this._namePlace, {Key? key}) : super(key: key);
+  const TitleCard(this._namePlace, this._addressPlace, {Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +28,7 @@ class TitleCard extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Kandersteg, Switzerland',
+                  _addressPlace,
                   style: TextStyle(
                     color: Colors.grey[500],
                   ),

@@ -8,10 +8,10 @@ class ActionsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: const [
-        ActionItem(Icons.call, 'CALL'),
-        ActionItem(Icons.near_me, 'ROUTE'),
-        ActionItem(Icons.share, 'SHARE'),
+      children: [
+        ActionItem(Icons.web, 'SITE', () {}),
+        ActionItem(Icons.gps_fixed_outlined, 'ROUTE', () {}),
+        ActionItem(Icons.airplane_ticket_outlined, 'TICKET', () {}),
       ],
     );
     ;

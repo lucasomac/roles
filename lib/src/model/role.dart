@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Role {
+  late String _address;
   late String _biography;
   late GeoPoint _location;
   late String _name;
@@ -9,8 +10,14 @@ class Role {
   late String _site;
   late bool _wasVisited;
 
-  Role(this._biography, this._location, this._name, this._profileImage,
-      this._sigla, this._site, this._wasVisited);
+  Role(this._address, this._biography, this._location, this._name,
+      this._profileImage, this._sigla, this._site, this._wasVisited);
+
+  String get address => _address;
+
+  set address(String value) {
+    _address = value;
+  }
 
   String get biography => _biography;
 
@@ -45,6 +52,7 @@ class Role {
   set wasVisited(bool wasVisited) => _wasVisited = wasVisited;
 
   Role.fromJson(Map<String, dynamic> json) {
+    _address = json['address'];
     _biography = json['biography'];
     _location = GeoPoint(json['location'].latitude, json['location'].longitude);
     _name = json['name'];
@@ -56,6 +64,7 @@ class Role {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
+    data['address'] = _address;
     data['biography'] = _biography;
     data['location'] = {
       "latitude": _location.latitude,
