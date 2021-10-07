@@ -8,10 +8,19 @@ class Role {
   late String _profileImage;
   late String _sigla;
   late String _site;
+  late String _ticket;
   late bool _wasVisited;
 
-  Role(this._address, this._biography, this._location, this._name,
-      this._profileImage, this._sigla, this._site, this._wasVisited);
+  Role(
+      this._address,
+      this._biography,
+      this._location,
+      this._name,
+      this._profileImage,
+      this._sigla,
+      this._site,
+      this._ticket,
+      this._wasVisited);
 
   String get address => _address;
 
@@ -47,6 +56,12 @@ class Role {
 
   set site(String site) => _site = site;
 
+  String get ticket => _ticket;
+
+  set ticket(String value) {
+    _ticket = value;
+  }
+
   bool get wasVisited => _wasVisited;
 
   set wasVisited(bool wasVisited) => _wasVisited = wasVisited;
@@ -59,6 +74,7 @@ class Role {
     _profileImage = json['profileImage'];
     _sigla = json['sigla'];
     _site = json['site'];
+    _ticket = json['ticket'];
     _wasVisited = json['wasVisited'];
   }
 
@@ -74,6 +90,7 @@ class Role {
     data['profileImage'] = _profileImage;
     data['sigla'] = _sigla;
     data['site'] = _site;
+    data['ticket'] = _ticket;
     data['wasVisited'] = _wasVisited;
     return data;
   }

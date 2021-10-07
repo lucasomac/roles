@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ActionItem extends StatelessWidget {
   final IconData _icon;
   final String _label;
-  final Function? _onTap;
+  final Function() _onTap;
 
   const ActionItem(this._icon, this._label, this._onTap, {Key? key})
       : super(key: key);
@@ -11,7 +11,7 @@ class ActionItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _onTap,
+      onTap: _onTap,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,

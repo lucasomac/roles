@@ -57,7 +57,7 @@ class ItemRole extends StatelessWidget {
         child: Column(
           children: [
             TitleCard(_role.name, _role.address),
-            const ActionsCard(),
+            ActionsCard(_role.ticket, _role.site),
             Padding(
               padding: const EdgeInsets.all(32.0),
               child: Text(
