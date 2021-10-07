@@ -24,8 +24,8 @@ class ItemRole extends StatelessWidget {
           ),
           flexibleSpace: ClipRRect(
             borderRadius: const BorderRadius.only(
-              bottomLeft: Radius.circular(48),
-              bottomRight: Radius.circular(48),
+              bottomLeft: Radius.circular(128),
+              // bottomRight: Radius.circular(48),
             ),
             child: Container(
               decoration: BoxDecoration(
@@ -36,8 +36,8 @@ class ItemRole extends StatelessWidget {
           ),
           shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(48),
-                  bottomLeft: Radius.circular(48))),
+                  // bottomRight: Radius.circular(48),
+                  bottomLeft: Radius.circular(128))),
         ),
       ),
       body: Container(
