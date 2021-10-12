@@ -1,4 +1,4 @@
-<div>
+<div align="center">
 
 ![github](assets/images/logo.png "role sp saopaulo")
 </div>
