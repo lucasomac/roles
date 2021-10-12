@@ -37,11 +37,13 @@ Está viajando ou mora em São Paulo e não sabe que rolê visistar na cidade? C
 
 ## O que pretendemos desenvolver/O que já está pronto
 
-[] Cadastrar Rolê
-[] Consultar Rolê
-[] Favoritar Rolê
-[] Acessar site do Rolê
-[] Acessar venda de ingresso do Rolê
+- [ ] Login 
+- [ ] Cadastro Rolê
+- [x] Consulta Rolê
+- [ ] Favoritar Rolê
+- [x] Acessar site do Rolê
+- [x] Acessar venda de ingresso do Rolê
+- [ ] Acessar rota no mapa para o rolê
 
 ## ⚙ Tecnologias
 
