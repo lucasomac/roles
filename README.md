@@ -1,18 +1,18 @@
 <div>
 
-![github](assets/android.jpg "android")
+![github](assets/images/logo.png "role sp saopaulo")
 </div>
 
 <div align="center">
 
-# Readme template para projetos android do GitHub
+# RolêSP
 
 </div>
 <div align="center">
 
   [Projeto](#-projeto) | 
   [Tecnologias](#-tecnologias) | 
-  [Ferramentas](#-ferramentas) | 
+  [Ferramentas](#-ferramentas) |  
   [Como contribuir](#-como-contribuir) | 
   [Executar esse projeto](#-executar-esse-projeto) | 
   [Licença](#-licença)
@@ -22,12 +22,12 @@
 <div align="center">
 
 [![Autor](https://img.shields.io/badge/autor-Lucas%20de%20Oliveira%20Macedo-920629?style=flat-square)](https://github.com/lucasomac)
-![Linguagens](https://img.shields.io/github/languages/count/lucasomac/readme?color=920629&style=flat-square)
-[![Stars](https://img.shields.io/github/stars/lucasomac/readme?color=920629&style=flat-square)](https://github.com/lucasomac/readme/stargazers)
-[![Forks](https://img.shields.io/github/forks/lucasomac/readme?color=920629&style=flat-square)](https://github.com/lucasomac/readme/network/members)
-![Tamanho do código em bytes](https://img.shields.io/github/repo-size/lucasomac/readme?color=920629&style=flat-square)
-[![Last commit](https://img.shields.io/github/last-commit/lucasomac/readme?color=920629&style=flat-square)](https://github.com/lucasomac/readme/commits/master)
-[![Downloads](https://img.shields.io/github/downloads/lucasomac/readme/total?color=920629&style=flat-square)](https://github.com/lucasomac/readme/releases)
+![Linguagens](https://img.shields.io/github/languages/count/lucasomac/roles?color=920629&style=flat-square)
+[![Stars](https://img.shields.io/github/stars/lucasomac/roles?color=920629&style=flat-square)](https://github.com/lucasomac/roles/stargazers)
+[![Forks](https://img.shields.io/github/forks/lucasomac/roles?color=920629&style=flat-square)](https://github.com/lucasomac/roles/network/members)
+![Tamanho do código em bytes](https://img.shields.io/github/repo-size/lucasomac/roles?color=920629&style=flat-square)
+[![Last commit](https://img.shields.io/github/last-commit/lucasomac/roles?color=920629&style=flat-square)](https://github.com/lucasomac/roles/commits/master)
+[![Downloads](https://img.shields.io/github/downloads/lucasomac/roles/total?color=920629&style=flat-square)](https://github.com/lucasomac/roles/releases)
 
 </div>
 
@@ -35,42 +35,70 @@
 
 Está viajando ou mora em São Paulo e não sabe que rolê visistar na cidade? Com o RoleSP não vai faltar lugar para você visitar na cidade e tudo a um clique do seu celular sem precisar perder tempo procurando.
 
+## O que pretendemos desenvolver/O que já está pronto
+
+[] Cadastrar Rolê
+[] Consultar Rolê
+[] Favoritar Rolê
+[] Acessar site do Rolê
+[] Acessar venda de ingresso do Rolê
+
 ## ⚙ Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Android](https://www.android.com/intl/pt-BR_br/)
-- [Kotlin](https://kotlinlang.org/)
-- [Java](https://java.com/)
+- [Flutter](https://flutter.dev/)
 - [Material Design](https://material.io)
+- [Firebase](https://firebase.google.com/)
 
-# Rolês SP
+## ⛏ Ferramentas:
+
+Esse projeto foi desenvolvido com o uso das seguintes ferramentas/IDE:
+
+- [Android Studio](https://developer.android.com/studio)
+
+## 🤔 Como contribuir {#contribuir}
+
+- Faça um fork desse repositório;
+- Cria uma branch com a sua feature: `git checkout -b minha-feature`;
+- Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
+- Faça push para a sua branch: `git push origin minha-feature`.
 
 
+## 🏁 Executar esse projeto:
 
-## Getting Started
+Para executar esse projeto na sua máquina,
+clone no repositório:
 
-This project is a starting point for a Flutter application that follows the
-[simple app state management
-tutorial](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple).
+```bash
+$ git clone https://github.com/lucasomac/roles.git
+```
+Abra o projeto com o Android Studio e acione o comando para executar em seu aparelho ou emullador android
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📜 [Licença](/LICENSE.md)
 
-## Assets
+---
 
-The `assets` directory houses images, fonts, and any other files you want to
-include with your application.
+<div align="center"> 
 
-The `assets/images` directory contains [resolution-aware
-images](https://flutter.dev/docs/development/ui/assets-and-images#resolution-aware).
+#### Somos o que fazemos para mudar o que fomos!
 
-## Localization
+</div>
 
-This project generates localized messages based on arb files found in
-the `lib/src/localization` directory.
+---
 
-To support additional languages, please visit the tutorial on
-[Internationalizing Flutter
-apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
+<div align="center"> 
+
+### *Autor: [Lucas de Oliveira Macedo](https://github.com/lucasomac "Lucas de Oliveira Macedo")*
+
+</div>
+
+<div align="center">
+
+[![Lucas Macedo Linkedin](https://img.shields.io/badge/LinkedIn-lucasomac-blue?logo=linkedin "linkedin")](https://www.linkedin.com/in/lucasomac)
+[![Lucas Macedo Github](https://img.shields.io/badge/GitHub-lucasomac-lightgrey?logo=github "github")](https://github.com/lucasomac)
+[![Lucas Macedo Twitter](https://img.shields.io/badge/Twitter-_lucasomac-blue?logo=twitter "twitter")](https://twitter.com/lucasomac)
+[![Lucas Macedo Instagram](https://img.shields.io/badge/Instragram-lucasomac-E10979?logo=instagram "instagram")](https://instagram.com/lucasomac)
+[![Lucas Macedo Facebook](https://img.shields.io/badge/Facebook-lucasomac-blue?logo=facebook "facebook")](https://facebook.com/lucasomac)
+
+</div>
