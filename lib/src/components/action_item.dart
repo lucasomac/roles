@@ -10,7 +10,7 @@ class ActionItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return InkWell(
       onTap: _onTap,
       child: Column(
         mainAxisSize: MainAxisSize.min,
