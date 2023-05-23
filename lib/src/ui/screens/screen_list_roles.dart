@@ -1,13 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:roles/src/components/item_role.dart';
+import 'package:roles/src/ui/screens/screen_role.dart';
 import 'package:roles/src/database/firestore.dart';
 import 'package:roles/src/model/role.dart';
-import 'package:roles/src/components/item_miniature.dart';
+import 'package:roles/src/ui/components/item_miniature.dart';
 import 'package:roles/src/util/colors_pallet.dart';
 
-class ListRoles extends StatelessWidget {
-  const ListRoles({Key? key}) : super(key: key);
+class ScreenListRoles extends StatelessWidget {
+  const ScreenListRoles({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class ListRoles extends StatelessWidget {
                     Role.fromJson(document.data()! as Map<String, dynamic>);
                 return GestureDetector(
                   onTap: () => Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => ItemRole(data))),
+                      MaterialPageRoute(builder: (context) => ScreenRole(data))),
                   child: ItemMiniature(data),
                 );
               }).toList(),
@@ -48,8 +48,8 @@ class ListRoles extends StatelessWidget {
           }),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: const Icon(Icons.add),
         elevation: 16,
+        child: const Icon(Icons.add),
       ),
       floatingActionButtonAnimator: FloatingActionButtonAnimator.scaling,
     );
