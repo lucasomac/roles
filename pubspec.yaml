@@ -7,7 +7,7 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.19.4 <3.7.7'
+  sdk: '>=2.19.4 <3.10.1'
 
 dependencies:
   flutter:
@@ -19,6 +19,7 @@ dependencies:
   flutter_launcher_icons:
   url_launcher:
   google_maps_flutter:
+  maps_launcher:
 
 dev_dependencies:
   flutter_test:

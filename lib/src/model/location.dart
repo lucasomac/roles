@@ -1,31 +1,23 @@
 class Location {
-  late int _latitude;
-  late int _longitude;
+  late int latitude;
+  late int longitude;
 
-  Location(this._latitude, this._longitude);
-
-  int get latitude => _latitude;
-
-  set latitude(int latitude) => _latitude = latitude;
-
-  int get longitude => _longitude;
-
-  set longitude(int longitude) => _longitude = longitude;
+  Location(this.latitude, this.longitude);
 
   Location.fromJson(Map<String, dynamic> json) {
-    _latitude = json['latitude'];
-    _longitude = json['longitude'];
+    latitude = json['latitude'];
+    longitude = json['longitude'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
-    data['latitude'] = _latitude;
-    data['longitude'] = _longitude;
+    data['latitude'] = latitude;
+    data['longitude'] = longitude;
     return data;
   }
 
   @override
   String toString() {
-    return 'Location{_latitude: $_latitude, _longitude: $_longitude}';
+    return 'Location{_latitude: $latitude, _longitude: $longitude}';
   }
 }
