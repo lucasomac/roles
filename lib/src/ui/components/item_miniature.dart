@@ -24,7 +24,7 @@ class ItemMiniature extends StatelessWidget {
           child: Image.network(
             _role.profileImage,
             fit: BoxFit.fill,
-            semanticLabel: _role.sigla,
+            semanticLabel: _role.acronym,
             loadingBuilder: (context, child, loadingProgress) {
               if (loadingProgress == null) return child;
               return const Center(child: CircularProgressIndicator());

@@ -21,7 +21,7 @@ class ActionItem extends StatelessWidget {
             margin: const EdgeInsets.only(top: 8),
             child: Text(
               _label,
-              style: Theme.of(context).textTheme.subtitle2,
+              style: Theme.of(context).textTheme.titleSmall,
             ),
           ),
         ],

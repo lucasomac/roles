@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:roles/src/screens/list_roles.dart';
+import 'package:roles/src/ui/screens/screen_list_roles.dart';
 import 'package:roles/src/util/colors_pallet.dart';
 
 /// The Widget that configures your application.
@@ -28,23 +28,22 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: ThemeData(
         primaryColor: ColorsPallet.primary,
-        accentColor: ColorsPallet.secondary,
         primaryColorLight: ColorsPallet.primaryLight,
         primaryColorDark: ColorsPallet.primaryDark,
         textTheme: const TextTheme(
-            headline1: TextStyle(
+            displayLarge: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 48,
                 color: ColorsPallet.textPrimary),
-            subtitle1: TextStyle(
+            titleMedium: TextStyle(
                 fontSize: 24,
                 fontStyle: FontStyle.italic,
                 color: ColorsPallet.textSecondary),
-            bodyText1: TextStyle(
+            bodyLarge: TextStyle(
               fontSize: 14,
               color: ColorsPallet.textSecondary,
             ),
-            subtitle2: TextStyle(
+            titleSmall: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w400,
                 color: ColorsPallet.primary)),
@@ -53,9 +52,11 @@ class App extends StatelessWidget {
           backgroundColor: ColorsPallet.secondary,
           foregroundColor: ColorsPallet.textSecondary,
         ),
+        colorScheme: ColorScheme.fromSwatch()
+            .copyWith(secondary: ColorsPallet.secondary),
       ),
       title: 'Roles',
-      home: const ListRoles(),
+      home: const ScreenListRoles(),
     );
   }
 }
